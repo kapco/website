@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>KAP.CO</title>
+    <script>
+        if (window.location.pathname === '/' && window.location.hash.length > 1)
+            window.location.href = 'https://go.kap.co/' + window.location.hash.substr(1);
+    </script>
     <link href='https://fonts.googleapis.com/css?family=Expletus+Sans' rel='stylesheet' type='text/css'>
     <style>
         body{background-color:#fefefe;font-family: Verdana;}
